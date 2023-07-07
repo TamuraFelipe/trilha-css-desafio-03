@@ -1,0 +1,59 @@
+@import url('./reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+:root{
+    font-size: 62.5%;
+}
+html {
+    font-family: 'Roboto';
+}
+input {
+    padding-left: 1rem;
+    width: 100%;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 2.4rem;
+    height: 5.6rem;
+    background: #fff;
+}
+.header .menu {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem; 
+}
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.search {
+    display: flex;
+    width: 37rem;
+    height: 40px;
+    border: 1px solid #CCC;
+    border-radius: 6px;
+}
+.btn-search {
+    background: #f8f8f8;
+    border-left: 1px solid #CCC;
+    border-radius: 0 6px 6px 0;
+    padding-inline: 1rem;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+}
+.actions .avatar {
+    display: block;
+    width: 3.4rem;
+    height: 3.4rem;
+    border-radius: 50%;
+}
