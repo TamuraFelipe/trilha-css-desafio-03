@@ -4,4 +4,6 @@
     box-sizing: border-box;
     border: none;
     background: none;
+    list-style: none;
+    text-decoration: none;
 }

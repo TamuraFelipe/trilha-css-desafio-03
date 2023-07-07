@@ -6,10 +6,25 @@
 html {
     font-family: 'Roboto';
 }
+body {
+    background: #f9f9f9;
+    height: 100vh;
+}
 input {
     padding-left: 1rem;
     width: 100%;
 }
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 21.8rem 1fr;
+    grid-template-rows: 5.6rem auto;
+    grid-template-areas: 
+        "header header"
+        "aside main";
+    height: 100%;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -17,6 +32,7 @@ input {
     padding-inline: 2.4rem;
     height: 5.6rem;
     background: #fff;
+    grid-area: header;
 }
 .header .menu {
     display: flex;
@@ -56,4 +72,48 @@ input {
     width: 3.4rem;
     height: 3.4rem;
     border-radius: 50%;
+}
+
+.aside {
+    grid-area: aside;
+    padding: 2.4rem;
+    background: #fff;
+    height: 100%;
+}
+.aside .action-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+}
+.aside .action-list a {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    color: #000;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.aside .action-list a.active,
+.aside .action-list a:hover {
+    font-weight: 600;
+}
+
+.main {
+    grid-area: main;
+    padding: 2.4rem;
+}
+.main .content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.main .content .card {
+    max-width: 25rem;
+    padding: 1.6rem;
+}
+.main .content .card > img {
+    display: block;
+    width: 100%;
 }
