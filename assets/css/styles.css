@@ -108,12 +108,33 @@ input {
 .main .content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.4rem;
 }
 .main .content .card {
-    max-width: 25rem;
     padding: 1.6rem;
 }
-.main .content .card > img {
+.main .content .card a > img {
     display: block;
     width: 100%;
+    margin-bottom: 1.6rem;
+    border-radius: 4px;
+}
+.main .content .card .card-description {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.main .content .card .card-description h3,
+.main .content .card .card-description span {
+    color: #000;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.main .content .card .card-description span {
+    color: #515151;
+    font-weight: 400;
+    display: block;
 }
